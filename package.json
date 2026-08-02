@@ -1,0 +1,12 @@
+{
+  "name": "another-portfolio-scripts",
+  "version": "1.0.0",
+  "description": "Utility scripts for Another portfolio (thumbnails)",
+  "scripts": {
+    "screenshot": "node scripts/screenshot.js",
+    "generate-png": "python scripts/generate_png_thumbnails.py"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}

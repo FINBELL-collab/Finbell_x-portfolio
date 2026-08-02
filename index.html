@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finbell_Dev - UI/UX Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <h1>Finbell_Dev</h1>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch">
+    <label for="theme-switch" class="toggle-label">
+      <span class="toggle-slider"></span>
+    </label>
+  </div>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <h2>I Design <span id="typed-text">Smart Experiences</span></h2>
+    <p>Creating premium UI/UX designs with modern interactions and seamless user journeys.</p>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number">
+          <span class="counter" data-target="50">0</span>
+          <span class="stat-plus">+</span>
+        </div>
+        <p>Projects</p>
+      </div>
+      <div class="stat">
+        <div class="stat-number">
+          <span class="counter" data-target="30">0</span>
+          <span class="stat-plus">+</span>
+        </div>
+        <p>Clients</p>
+      </div>
+      <div class="stat">
+        <div class="stat-number">
+          <span class="counter" data-target="3">0</span>
+        </div>
+        <p>Years Exp</p>
+      </div>
+    </div>
+    <div class="hero-buttons">
+      <button class="btn magnetic-btn" onclick="scrollToProjects()">View My Work</button>
+      <button class="btn btn-secondary magnetic-btn" onclick="scrollToContact()">Get In Touch</button>
+    </div>
+  </div>
+  <div class="particles" id="particles"></div>
+  <div class="parallax-bg">
+    <div class="parallax-layer layer-1"></div>
+    <div class="parallax-layer layer-2"></div>
+    <div class="parallax-layer layer-3"></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p class="about">UI/UX Developer crafting elegant, high-performing digital experiences with a focus on usability, aesthetics, and business impact.</p>
+      <p>With over 3 years of experience in the design industry, I specialize in creating user-centered designs that not only look beautiful but also drive results. My approach combines creative design thinking with technical expertise to deliver seamless digital experiences.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="about-image">
+      <div class="profile-placeholder">
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills & Expertise</h2>
+  <div class="skills-container">
+    <div class="skill-category">
+      <h3>Design Tools</h3>
+      <div class="skill-item">
+        <span>Figma</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 95%"></div>
+        </div>
+        <span class="percentage">95%</span>
+      </div>
+      <div class="skill-item">
+        <span>Adobe XD</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%"></div>
+        </div>
+        <span class="percentage">90%</span>
+      </div>
+      <div class="skill-item">
+        <span>Sketch</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%"></div>
+        </div>
+        <span class="percentage">85%</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Frontend Development</h3>
+      <div class="skill-item">
+        <span>HTML/CSS</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 95%"></div>
+        </div>
+        <span class="percentage">95%</span>
+      </div>
+      <div class="skill-item">
+        <span>JavaScript</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%"></div>
+        </div>
+        <span class="percentage">90%</span>
+      </div>
+      <div class="skill-item">
+        <span>React</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%"></div>
+        </div>
+        <span class="percentage">85%</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>UX Research</h3>
+      <div class="skill-item">
+        <span>User Research</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%"></div>
+        </div>
+        <span class="percentage">90%</span>
+      </div>
+      <div class="skill-item">
+        <span>Usability Testing</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 88%"></div>
+        </div>
+        <span class="percentage">88%</span>
+      </div>
+      <div class="skill-item">
+        <span>Prototyping</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 92%"></div>
+        </div>
+        <span class="percentage">92%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Services</h2>
+  <div class="services">
+    <div class="card glass">
+      <h3>UI/UX Design</h3>
+      <p>Clean, conversion-focused interfaces for portfolios, landing pages, and business websites with a strong visual story.</p>
+    </div>
+    <div class="card glass">
+      <h3>Frontend Development</h3>
+      <p>Responsive HTML, CSS, and JavaScript builds with smooth interactions and modern layouts that feel premium.</p>
+    </div>
+    <div class="card glass">
+      <h3>Template Customization</h3>
+      <p>Turning local design concepts and starter templates into refined, ready-to-showcase web experiences.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+
+  <!-- Project Filters -->
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web Apps</button>
+    <button class="filter-btn" data-filter="mobile">Mobile</button>
+    <button class="filter-btn" data-filter="ui">UI/UX</button>
+    <button class="filter-btn" data-filter="dashboard">E-commerce</button>
+    <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card tilt-card" data-category="web ui" data-project="architect">
+      <div class="project-image">
+        <img src="assets/architect.png" alt="Architect Studio preview">
+        <div class="project-overlay">
+          <div class="project-links">
+            <a href="../Architect website/index.html" class="project-link" target="_blank" rel="noopener" title="Open local preview"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <span class="project-status completed">Local</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-category">Web Design</div>
+        <h3>Architect Studio</h3>
+        <p>A polished architecture concept built as a responsive landing page with strong visual hierarchy.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">UI Layout</span>
+        </div>
+        <button class="project-btn" onclick="openProjectModal('architect')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project-card tilt-card" data-category="web ui" data-project="coffee">
+      <div class="project-image">
+        <img src="assets/coffee.png" alt="Coffee House preview">
+        <div class="project-overlay">
+          <div class="project-links">
+            <a href="../Coffee/index.html" class="project-link" target="_blank" rel="noopener" title="Open local preview"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <span class="project-status completed">Local</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-category">Brand Web</div>
+        <h3>Coffee House</h3>
+        <p>A warm, story-driven website concept focused on product experience and atmosphere.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">Branding</span>
+        </div>
+        <button class="project-btn" onclick="openProjectModal('coffee')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project-card tilt-card" data-category="web ui" data-project="digitalhub">
+      <div class="project-image">
+        <img src="assets/digitalhub.png" alt="DigitalHub preview">
+        <div class="project-overlay">
+          <div class="project-links">
+            <a href="../Digitalhub Solutions/index.html" class="project-link" target="_blank" rel="noopener" title="Open local preview"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <span class="project-status completed">Local</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-category">Business Site</div>
+        <h3>DigitalHub Solutions</h3>
+        <p>An agency-style website structure built to present services, portfolios, and contact details clearly.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">Business UI</span>
+        </div>
+        <button class="project-btn" onclick="openProjectModal('digitalhub')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project-card tilt-card" data-category="web ui" data-project="salon">
+      <div class="project-image">
+        <img src="assets/salon.png" alt="Hair Salon preview">
+        <div class="project-overlay">
+          <div class="project-links">
+            <a href="../hair-salon-html-template/hair-salon-html-template/index.html" class="project-link" target="_blank" rel="noopener" title="Open local preview"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <span class="project-status completed">Local</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-category">Service Site</div>
+        <h3>Hair Salon</h3>
+        <p>A polished service-focused website with sections for bookings, offers, and customer trust.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">Conversion UI</span>
+        </div>
+        <button class="project-btn" onclick="openProjectModal('salon')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project-card tilt-card" data-category="web ui" data-project="tea">
+      <div class="project-image">
+        <img src="assets/tea.png" alt="Tea Shop preview">
+        <div class="project-overlay">
+          <div class="project-links">
+            <a href="../tea-shop-website-template/tea-shop-website-template/index.html" class="project-link" target="_blank" rel="noopener" title="Open local preview"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <span class="project-status completed">Local</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-category">E-commerce UI</div>
+        <h3>Tea Shop</h3>
+        <p>A product-oriented layout with strong content flow and clear calls-to-action for online sales.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">E-commerce</span>
+        </div>
+        <button class="project-btn" onclick="openProjectModal('tea')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project-card tilt-card" data-category="web ui" data-project="studio">
+      <div class="project-image">
+        <img src="assets/studio.png" alt="Photo Studio preview">
+        <div class="project-overlay">
+          <div class="project-links">
+            <a href="../photo-studio-website-template/photo-studio-website-template/index.html" class="project-link" target="_blank" rel="noopener" title="Open local preview"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <span class="project-status completed">Local</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-category">Creative Web</div>
+        <h3>Photo Studio</h3>
+        <p>A visually rich showcase concept designed for a creative brand and portfolio storytelling.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">Visual Storytelling</span>
+        </div>
+        <button class="project-btn" onclick="openProjectModal('studio')">View Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load More Button -->
+  <div class="load-more-container">
+    <button class="btn load-more-btn" id="loadMoreBtn">
+      Load More Projects
+      <i class="fas fa-plus"></i>
+    </button>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2 class="section-title">Client Testimonials</h2>
+  <div class="testimonials-container">
+    <div class="testimonial-card glass">
+      <div class="testimonial-content">
+        <p>"Finbell delivered exceptional UI/UX design that exceeded our expectations. The attention to detail and user-centered approach resulted in a 40% increase in user engagement."</p>
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="author-info">
+          <h4>Sarah Johnson</h4>
+          <span>CEO, TechStart Inc.</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card glass">
+      <div class="testimonial-content">
+        <p>"Working with Finbell was a game-changer for our mobile app. The design is not only beautiful but also incredibly intuitive. Highly recommend!"</p>
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="author-info">
+          <h4>Mike Chen</h4>
+          <span>Product Manager, InnovateLab</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card glass">
+      <div class="testimonial-content">
+        <p>"The frontend development skills are outstanding. Clean code, responsive design, and seamless user experience. Our conversion rate improved significantly."</p>
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="author-info">
+          <h4>Emily Rodriguez</h4>
+          <span>Marketing Director, GrowthCo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Let's Work Together</h3>
+      <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:fiyinfoluwabell17@gmail.com" class="contact-link">fiyinfoluwabell17@gmail.com</a>
+        </div>
+        <button type="button" class="copy-email-btn" id="copyEmailBtn">Copy Email</button>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+(234) 8141-513470</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Lagos Nigeria.</span>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="whatsapp"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="container">
+
+    <h2>Contact Me</h2>
+
+    <form action="https://formsubmit.co/fiyinfoluwabell17@gmail.com" method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_template" value="table">
+
+        <input type="hidden" name="_subject" value="New Website Contact">
+
+        <input type="hidden" name="_next" value="thank-you.html">
+
+        <div class="input-box">
+            <input type="text" name="Full Name" placeholder="Full Name" required>
+        </div>
+
+        <div class="input-box">
+            <input type="email" name="Email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+            <input type="tel" name="Phone" placeholder="Phone Number">
+        </div>
+
+        <div class="input-box">
+            <textarea name="Message" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Finbell UI/UX Developer Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Scroll Progress Indicator -->
+<div id="scrollProgress">
+  <div class="progress-bar-fill"></div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">
+  ↑
+</button>
+
+<!-- Project Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+    <div id="modalContent">
+      <!-- Content will be dynamically loaded -->
+    </div>
+  </div>
+</div>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-content">
+    <div class="spinner"></div>
+    <div class="loading-text">Loading...</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+

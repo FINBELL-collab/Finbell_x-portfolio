@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <style>
+      .bg{fill:url(#g2)}
+      .title{fill:#fff;font-family:Inter, Poppins, sans-serif;font-weight:700;font-size:48px}
+      .sub{fill:rgba(255,255,255,0.9);font-family:Inter, Poppins, sans-serif;font-size:20px}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="700" rx="18"/>
+  <g transform="translate(60,120)">
+    <text class="title">DigitalHub Solutions</text>
+    <text class="sub" y="60">Agency-style business site — services, portfolio, contact</text>
+  </g>
+</svg>
